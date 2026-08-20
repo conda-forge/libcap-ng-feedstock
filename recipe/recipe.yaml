@@ -1,5 +1,5 @@
 context:
-  version: "0.9.3"
+  version: "0.9.4"
 
 package:
   name: libcap-ng
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/stevegrubb/libcap-ng/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: fe11ebbb55904763b3532f19069f13ec319042634620180a03bd4653d301563e
+  sha256: 49c19c669bb06d5c0a398e813034240571b78b316faf1a9609c2cc3c284b55ba
 
 build:
-  number: 1
+  number: 0
   script:
     - ./autogen.sh
     # NOTE: we `--disable-cap-audit` since it requires `bpftool`, `libaudit` and `libbpf` which aren't yet packaged for conda-forge
