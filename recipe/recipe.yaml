@@ -48,12 +48,14 @@ tests:
       files:
         - lib/pkgconfig/libcap-ng.pc
         - share/aclocal/cap-ng.m4
+        - share/bash-completion/completions/cap-audit
+        - share/bash-completion/completions/filecap
         - share/bash-completion/completions/libcap-ng.bash_completion
-        - share/man/man3/capng_*.3
-        - share/man/man7/libdrop_ambient.7
-        - share/man/man8/filecap.8
-        - share/man/man8/netcap.8
-        - share/man/man8/pscap.8
+        - share/bash-completion/completions/netcap
+        - share/bash-completion/completions/pscap
+        - share/man/man3/*.3
+        - share/man/man7/*.7
+        - share/man/man8/*.8
       strict: true
 
 about:
