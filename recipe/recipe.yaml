@@ -28,7 +28,7 @@ requirements:
     - automake
     - libtool
     - make
-    - pkg-config
+    - pkgconf
 
 tests:
   - script:
